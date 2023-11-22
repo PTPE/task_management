@@ -1,10 +1,11 @@
 import Header from "./components/header/Header";
-import ThemeContext from "./contexts/ThemeContext";
-
+import SideBar from "./components/sidebar/SideBar";
+import ThemeContextProvider from "./contexts/ThemeContext";
 export default function App() {
   return (
-    <ThemeContext>
+    <ThemeContextProvider>
       <Header />
-    </ThemeContext>
+      <SideBar />
+    </ThemeContextProvider>
   );
 }

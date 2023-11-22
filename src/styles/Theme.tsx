@@ -1,7 +1,7 @@
 const sharedTheme = {
   purple: "#625FC1",
   lightPurple: "#8A87D0",
-  lightestPurple: "#B0AFDF",
+  lightestPurple: "#EFEFFA",
 };
 
 const lightTheme = {
