@@ -1,5 +1,5 @@
 import * as S from "../../styles/sidebar";
-import { ColumnNameStyle } from "../../styles/shared/ColumnNameStyle";
+import { ColumnName } from "../../styles/shared/ColumnNameStyle";
 import BoardListItem from "./BoardListItem";
 import ThemeToggler from "./ThemeToggler";
 import HideSidebar from "./HideSidebar";
@@ -9,13 +9,15 @@ export default function SideBar() {
 
   return (
     <S.Sidebar className={isHide ? "hide" : ""}>
-      <ColumnNameStyle>ALL BOARDS（1）</ColumnNameStyle>
-      <S.BoardList>
-        <BoardListItem className="active">Launch Platform</BoardListItem>
-        <BoardListItem className="default">Marketing Plan</BoardListItem>
-        <S.AddNewBoard>+Create New Board</S.AddNewBoard>
-      </S.BoardList>
-      <div className="toggleHide">
+      <div>
+        <ColumnName>ALL BOARDS（1）</ColumnName>
+        <S.BoardList>
+          <BoardListItem className="active">Launch Platform</BoardListItem>
+          <BoardListItem className="default">Marketing Plan</BoardListItem>
+          <S.AddNewBoard>+Create New Board</S.AddNewBoard>
+        </S.BoardList>
+      </div>
+      <div>
         <ThemeToggler />
         <HideSidebar
           onHide={() => setIsHide((prev) => !prev)}

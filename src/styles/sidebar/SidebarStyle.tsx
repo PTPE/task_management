@@ -1,18 +1,19 @@
 import styled from "styled-components";
 
 const Sidebar = styled.div`
-  max-width: 260px;
+  height: 100%;
+  padding-top: 80px;
+  width: 260px;
   background: white;
-  height: 90%;
-  position: relative;
+  position: fixed;
+  z-index: 9;
+  top: 0px;
   transition: all ease 300ms;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   &.hide {
     margin-left: -260px;
-  }
-  .toggleHide {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
   }
 `;
 

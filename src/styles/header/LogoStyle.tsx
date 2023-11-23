@@ -7,6 +7,7 @@ const Logo = styled.div`
   align-items: center;
   gap: 20px;
   margin: 0px 103px 0px 43px;
+  z-index: 10;
 `;
 
 const LogoIcon = styled.div`
