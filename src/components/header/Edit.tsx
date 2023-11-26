@@ -2,7 +2,7 @@ import { useState } from "react";
 import * as S from "../../styles/header";
 
 export default function Edit() {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   document.addEventListener("click", (e) => {
     if (e.target instanceof Element)

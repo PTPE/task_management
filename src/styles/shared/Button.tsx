@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const AddNewTask = styled.button`
+export const Button = styled.button`
   font-size: 16px;
   font-weight: 700;
   color: white;
@@ -15,5 +15,3 @@ const AddNewTask = styled.button`
     background: ${(props) => props.theme.lightPurple};
   }
 `;
-
-export { AddNewTask };

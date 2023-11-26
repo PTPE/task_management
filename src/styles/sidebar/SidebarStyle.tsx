@@ -5,6 +5,7 @@ const Sidebar = styled.div`
   background: white;
   transition: all ease 300ms;
   display: flex;
+  z-index: 10;
   flex-direction: column;
   justify-content: space-between;
   &.hide {

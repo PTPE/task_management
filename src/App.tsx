@@ -1,5 +1,6 @@
 import Header from "./components/header/Header";
 import SideBar from "./components/sidebar/SideBar";
+import TaskSection from "./components/task/TaskSection";
 import ThemeContextProvider from "./contexts/ThemeContext";
 import * as S from "./styles/page/PageStyle";
 export default function App() {
@@ -9,6 +10,7 @@ export default function App() {
         <Header />
         <div className="columns">
           <SideBar />
+          <TaskSection />
         </div>
       </S.Container>
     </ThemeContextProvider>
