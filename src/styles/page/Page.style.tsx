@@ -5,9 +5,9 @@ const Container = styled.div`
   flex-direction: column;
   height: 100%;
   .columns {
-    flex: 1 0 auto;
+    flex: 1;
     display: flex;
-    overflow-x: scroll;
+    overflow: scroll;
   }
 `;
 

@@ -2,17 +2,19 @@ import styled, { keyframes } from "styled-components";
 
 const HideAnimation = keyframes`
   0% {
-    display: none;
-  }
-  90% {
-    display: none;
+    opacity:1;
+  50% {
+    opacity:1;
   }
   91% {
-    display: block;
+    opacity:0;
   }
+  100%{opacity:1
+    }
 `;
 
 const Hide = styled.div`
+  display: none;
   padding: 10px 20px;
   font-size: 15px;
   font-weight: 700;
@@ -29,7 +31,7 @@ const Hide = styled.div`
     background: ${(props) => props.theme.lightestPurple};
   }
   &.hide {
-    animation: ${HideAnimation} 300ms linear;
+    animation: ${HideAnimation} 1300ms linear;
     margin-left: 260px;
     width: 25%;
     background: ${(props) => props.theme.purple};

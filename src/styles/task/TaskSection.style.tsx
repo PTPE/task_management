@@ -5,6 +5,5 @@ export const TaskSection = styled.div`
   padding: 24px;
   display: flex;
   gap: 24px;
-  overflow-x: scroll;
-  height: 100%;
+  overflow: scroll;
 `;

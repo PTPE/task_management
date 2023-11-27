@@ -7,8 +7,6 @@ type HideSidebarType = {
 };
 
 export default function HideSidebar(props: HideSidebarType) {
-  console.log(props.isHide);
-
   if (!props.isHide)
     return (
       <S.Hide onClick={props.onHide}>

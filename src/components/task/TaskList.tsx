@@ -12,6 +12,10 @@ export default function TaskList() {
         <TaskItem />
         <TaskItem />
         <TaskItem />
+        <TaskItem />
+        <TaskItem />
+        <TaskItem />
+        <TaskItem />
       </S.TaskList>
     </div>
   );

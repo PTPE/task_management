@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 const Sidebar = styled.div`
   width: 260px;
-  background: white;
-  transition: all ease 300ms;
+  background: ${(props) => props.theme.bgPrimary};
+  transition: margin ease 1300ms;
   display: flex;
   z-index: 10;
   flex-direction: column;

@@ -1,4 +1,4 @@
-import { Button } from "../../styles/shared/Button";
+import { Button } from "../../styles/shared/Button.style";
 import * as S from "../../styles/task";
 
 export default function EmptyBoardInstruction() {

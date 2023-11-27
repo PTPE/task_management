@@ -9,7 +9,7 @@ type BoardListItemType = {
 export default function BoardListItem(props: BoardListItemType) {
   return (
     <S.BoardListItem className={props.className}>
-      <FileIcon type="active" />
+      <FileIcon type={props.className} />
       {props.children}
     </S.BoardListItem>
   );

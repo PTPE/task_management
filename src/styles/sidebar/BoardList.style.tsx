@@ -7,7 +7,8 @@ const BoardList = styled.ul`
 `;
 
 const ItemBase = styled.li`
-  padding: 15px;
+  padding: 16px 0px 16px 32px;
+  font-size: 15px;
   font-weight: 700;
   width: 90%;
   border-top-right-radius: 50px;
@@ -18,7 +19,7 @@ const ItemBase = styled.li`
   cursor: pointer;
   transition: all ease 300ms;
   &:hover {
-    background: ${(props) => props.theme.lightestPurple};
+    background: ${(props) => props.theme.purple + "25"};
     color: ${(props) => props.theme.purple};
   }
 `;
@@ -29,8 +30,8 @@ const BoardListItem = styled(ItemBase)`
     background: ${(props) => props.theme.purple};
     color: white;
     &:hover {
-      background: ${(props) => props.theme.lightestPurple};
-      color: ${(props) => props.theme.purple};
+      background: ${(props) => props.theme.lightPurple};
+      color: white;
     }
   }
 `;
@@ -38,6 +39,9 @@ const BoardListItem = styled(ItemBase)`
 const AddNewBoard = styled(ItemBase)`
   color: ${(props) => props.theme.purple};
   margin-bottom: auto;
+  &:hover {
+    background: ${(props) => props.theme.purple + "25"};
+  }
 `;
 
 export { BoardList, BoardListItem, AddNewBoard };

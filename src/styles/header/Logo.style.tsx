@@ -8,6 +8,7 @@ const Logo = styled.div`
   gap: 20px;
   margin: 0px 103px 0px 43px;
   z-index: 10;
+  color: ${(props) => props.theme.text};
 `;
 
 const LogoIcon = styled.div`
@@ -19,14 +20,15 @@ const Bar = styled.div`
   width: 6px;
   height: 25px;
   border-radius: 10px;
+  background: ${(props) => props.theme.purple};
   &.left {
-    background: ${(props) => props.theme.purple};
+    opacity: 1;
   }
   &.middle {
-    background: ${(props) => props.theme.lightPurple};
+    opacity: 0.75;
   }
   &.right {
-    background: ${(props) => props.theme.lightestPurple};
+    opacity: 0.5;
   }
 `;
 

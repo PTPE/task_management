@@ -1,7 +1,7 @@
 import Logo from "./Logo";
 import * as S from "../../styles/header";
 import Edit from "./Edit";
-import { Button } from "../../styles/shared/Button";
+import { Button } from "../../styles/shared/Button.style";
 
 export default function Header() {
   return (
